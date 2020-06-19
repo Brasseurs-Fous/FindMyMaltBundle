@@ -1,0 +1,27 @@
+{
+  "name": "brasseus-fous/find-my-malt-bundle",
+  "license": "MIT",
+  "type": "symfony-bundle",
+  "description": "FindMyMaltBundler is a bunlde to find to use in brewing recipe. It's a module of RibsAdminBundle",
+  "homepage": "https://github.com/Brasseurs-Fous/FindMyMaltBundle",
+  "authors": [
+    {
+      "name": "Anthony Pilloud",
+      "email": "pilloud.anthony@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "piou-piou/ribs-admin-bundle": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "PiouPiou\\RibsBlogBundle\\": ""
+    }
+  },
+  "extra": {
+    "symfony": {
+      "allow-contrib": "true"
+    }
+  }
+}
