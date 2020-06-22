@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "right": "findmymalt@admin@index",
+      "url": "findmymalt_admin_index",
+      "icon": "",
+      "text": "Your name",
+      "part": "a part"
+    }
+  ]
+}

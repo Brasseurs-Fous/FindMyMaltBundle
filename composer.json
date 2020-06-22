@@ -1,27 +1,50 @@
 {
-  "name": "brasseus-fous/find-my-malt-bundle",
-  "license": "MIT",
-  "type": "symfony-bundle",
-  "description": "FindMyMaltBundler is a bunlde to find to use in brewing recipe. It's a module of RibsAdminBundle",
-  "homepage": "https://github.com/Brasseurs-Fous/FindMyMaltBundle",
-  "authors": [
-    {
-      "name": "Anthony Pilloud",
-      "email": "pilloud.anthony@gmail.com"
+    "name": "piou-piou/your-name-bundle",
+    "license": "AGPL-3.0-or-later",
+    "type": "symfony-bundle",
+    "description": "",
+    "homepage": "https://github.com/Piou-piou/",
+    "authors": [
+        {
+            "name": "Anthony Pilloud",
+            "email": "pilloud.anthony@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "gedmo/doctrine-extensions": "2.4.*",
+        "firebase/php-jwt": "^5.0.0",
+        "piou-piou/ribs-admin-bundle": "dev-master",
+        "ramsey/uuid": "^3.7",
+        "symfony/framework-bundle": "^3.3|^4.0|~5.0",
+        "sensio/framework-extra-bundle": "^5.0",
+        "symfony/config": "^3.4|^4.0|~5.0",
+        "symfony/polyfill-mbstring": "1.13.*",
+        "symfony/security-bundle": "~3.0|~4.0|~5.0",
+        "symfony/translation": "~3.0|~4.0|~5.0",
+        "symfony/form": "~3.0|~4.0|~5.0",
+        "symfony/orm-pack": "*",
+        "symfony/validator": "~3.0|~4.0|~5.0",
+        "symfony/twig-pack": "*",
+        "symfony/routing": "^3.2 || ^4.0 || ~5.0",
+        "symfony/console": "^3.2 || ^4.0 || ~5.0",
+        "symfony/http-foundation": "^3.2 || ^4.0 || ~5.0",
+        "symfony/dependency-injection": "^3.3|^4.0|~5.0",
+        "symfony/http-kernel": "^3.3|^4.0|~5.0",
+        "symfony/asset": "^3.4 || ^4.0 || ~5.0"
+    },
+    "require-dev": {
+        "sensio/generator-bundle": "^3.1",
+        "symfony/yaml": "^3.4 || ^4.0 || ~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PiouPiou\\FindMyMaltBundle\\": ""
+        }
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": "true"
+        }
     }
-  ],
-  "require": {
-    "php": ">=7.1",
-    "piou-piou/ribs-admin-bundle": "dev-master"
-  },
-  "autoload": {
-    "psr-4": {
-      "PiouPiou\\RibsBlogBundle\\": ""
-    }
-  },
-  "extra": {
-    "symfony": {
-      "allow-contrib": "true"
-    }
-  }
 }

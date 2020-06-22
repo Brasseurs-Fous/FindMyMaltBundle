@@ -1,0 +1,15 @@
+services:
+    PiouPiou\FindMyMaltBundle\:
+        resource: '../../*'
+        exclude: '../../{Entity,Migrations,Tests}'
+
+    PiouPiou\FindMyMaltBundle\Controller\:
+        resource: '../../Controller'
+        calls:
+            - [setContainer, ["@service_container"]]
+        tags: ['controller.service_arguments']
+
+    PiouPiou\FindMyMaltBundle\EventListener\CreateUpdateAwareListener:
+        arguments: [ "@security.untracked_token_storage" ]
+        tags:
+            - { name: doctrine.orm.entity_listener }
